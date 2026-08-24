@@ -27,7 +27,7 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES), ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState())
         );
 
-        register(bootstrapContext,RUBY_ORE_COMMON_OVERWORLD_KEY,Feature.ORE,new OreConfiguration(Ruby_OVERWORLD,2));
+        register(bootstrapContext,RUBY_ORE_COMMON_OVERWORLD_KEY,Feature.ORE,new OreConfiguration(Ruby_OVERWORLD,3));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name){

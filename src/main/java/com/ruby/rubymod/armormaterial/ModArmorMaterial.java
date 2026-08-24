@@ -23,7 +23,7 @@ public class ModArmorMaterial {
             Identifier.fromNamespaceAndPath(RubyMod.MOD_ID,"ruby"));
 
     public static final ArmorMaterial RUBY_ARMOR_MATERIAL = new ArmorMaterial(
-            5, makeDefense(2, 5, 7, 2, 9), 18, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, ModTags.Items.REPAIRS_RUBY_ARMOR, RUBY_KEY
+            22, makeDefense(2, 5, 7, 2, 9), 18, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, ModTags.Items.REPAIRS_RUBY_ARMOR, RUBY_KEY
     );
 
     private static Map<ArmorType, Integer> makeDefense(int boots, int legs, int chest, int helm, int body) {

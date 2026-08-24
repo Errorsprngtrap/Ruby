@@ -34,5 +34,7 @@ public class ModModelProviders extends ModelProvider {
 
         //blocks
         blockModels.createTrivialCube(ModBlocks.RUBY_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.RUBY_ORE.get());
+        blockModels.createTrivialCube(ModBlocks.DEEPSLATE_RUBY_ORE.get());
     }
 }

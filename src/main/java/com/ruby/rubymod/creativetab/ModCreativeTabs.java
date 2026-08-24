@@ -22,7 +22,6 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetabs.rubymod.ruby_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY);
-                        output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModItems.RUBY_SWORD);
                         output.accept(ModItems.RUBY_PICKAXE);
                         output.accept(ModItems.RUBY_AXE);
@@ -35,6 +34,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RUBY_CHESTPLATE);
                         output.accept(ModItems.RUBY_LEGGINGS);
 
+                        output.accept(ModBlocks.RUBY_BLOCK);
+                        output.accept(ModBlocks.RUBY_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE);
                     })
                     .build()
     );

@@ -27,10 +27,10 @@ public class ModModelProviders extends ModelProvider {
 
         itemModels.generateSpear(ModItems.RUBY_SPEAR.get());
 
-        itemModels.generateFlatItem(ModItems.TEST_HELMET.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.TEST_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.TEST_BOOTS.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.TEST_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.RUBY_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
 
         //blocks
         blockModels.createTrivialCube(ModBlocks.RUBY_BLOCK.get());

@@ -2,6 +2,7 @@ package com.ruby.rubymod.armormaterial;
 
 import com.google.common.collect.Maps;
 import com.ruby.rubymod.RubyMod;
+import com.ruby.rubymod.tags.ModTags;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -10,6 +11,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 
 import java.util.Map;
 
@@ -17,11 +19,11 @@ public class ModArmorMaterial {
     private static ResourceKey<? extends Registry<EquipmentAsset>> ROOT_ID =
             ResourceKey.createRegistryKey(Identifier.withDefaultNamespace("equipment_asset"));
 
-    public static final ResourceKey<EquipmentAsset> TEST_KEY = ResourceKey.create(ROOT_ID,
-            Identifier.fromNamespaceAndPath(RubyMod.MOD_ID,"test"));
+    public static final ResourceKey<EquipmentAsset> RUBY_KEY = ResourceKey.create(ROOT_ID,
+            Identifier.fromNamespaceAndPath(RubyMod.MOD_ID,"ruby"));
 
-    public static final ArmorMaterial TEST_ARMOR_MATERIAL = new ArmorMaterial(
-            5, makeDefense(1, 2, 3, 1, 3), 15, SoundEvents.ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, ItemTags.REPAIRS_LEATHER_ARMOR, TEST_KEY
+    public static final ArmorMaterial RUBY_ARMOR_MATERIAL = new ArmorMaterial(
+            5, makeDefense(2, 5, 7, 2, 9), 18, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, ModTags.Items.REPAIRS_RUBY_ARMOR, RUBY_KEY
     );
 
     private static Map<ArmorType, Integer> makeDefense(int boots, int legs, int chest, int helm, int body) {

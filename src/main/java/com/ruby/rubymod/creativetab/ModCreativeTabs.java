@@ -30,10 +30,10 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RUBY_HOE);
                         output.accept(ModItems.RUBY_SPEAR);
 
-                        output.accept(ModItems.TEST_HELMET);
-                        output.accept(ModItems.TEST_CHESTPLATE);
-                        output.accept(ModItems.TEST_BOOTS);
-                        output.accept(ModItems.TEST_LEGGINGS);
+                        output.accept(ModItems.RUBY_HELMET);
+                        output.accept(ModItems.RUBY_BOOTS);
+                        output.accept(ModItems.RUBY_CHESTPLATE);
+                        output.accept(ModItems.RUBY_LEGGINGS);
 
                     })
                     .build()

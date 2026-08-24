@@ -37,16 +37,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RUBY_SPEAR.get());
 
         tag(ItemTags.CHEST_ARMOR)
-                .add(ModItems.TEST_CHESTPLATE.get());
+                .add(ModItems.RUBY_CHESTPLATE.get());
 
         tag(ItemTags.FOOT_ARMOR)
-                .add(ModItems.TEST_BOOTS.get());
+                .add(ModItems.RUBY_BOOTS.get());
 
         tag(ItemTags.LEG_ARMOR)
-                .add(ModItems.TEST_LEGGINGS.get());
+                .add(ModItems.RUBY_LEGGINGS.get());
 
         tag(ItemTags.HEAD_ARMOR)
-                .add(ModItems.TEST_HELMET.get());
+                .add(ModItems.RUBY_HELMET.get());
 
         tag(ModTags.Items.REPAIRS_RUBY_ARMOR)
                 .add(ModItems.RUBY.get());

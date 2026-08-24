@@ -22,8 +22,8 @@ public class ModTags {
 
     public static class  Blocks{
         //create tag example just below
-        public static final TagKey<Block> NEEDS_TEST_TOOL = createTag("need_test_tool");
-        public static final TagKey<Block> INCORRECT_FOR_TEST_TOOL = createTag("incorrect_for_test_tool");
+        public static final TagKey<Block> NEEDS_RUBY_TOOL = createTag("need_ruby_tool");
+        public static final TagKey<Block> INCORRECT_FOR_RUBY_TOOL = createTag("incorrect_for_ruby_tool");
 
 
         //that shit create the tags

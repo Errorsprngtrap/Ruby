@@ -23,8 +23,8 @@ public class ModEquipmentAsset implements DataProvider {
     }
 
     private static void bootstrap(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> output) {
-        output.accept(ModArmorMaterial.TEST_KEY, EquipmentClientInfo.builder()
-                .addHumanoidLayers(Identifier.fromNamespaceAndPath(RubyMod.MOD_ID, "test"), false)
+        output.accept(ModArmorMaterial.RUBY_KEY, EquipmentClientInfo.builder()
+                .addHumanoidLayers(Identifier.fromNamespaceAndPath(RubyMod.MOD_ID, "ruby"), false)
                 .build());
     }
 

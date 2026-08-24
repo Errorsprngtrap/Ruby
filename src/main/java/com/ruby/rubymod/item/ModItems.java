@@ -48,24 +48,24 @@ public class ModItems {
             )
     );
 
-    public static final DeferredItem<Item> TEST_BOOTS = ITEMS.registerItem(
-            "test_boots",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.TEST_ARMOR_MATERIAL, ArmorType.BOOTS))
+    public static final DeferredItem<Item> RUBY_BOOTS = ITEMS.registerItem(
+            "ruby_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.BOOTS))
     );
 
-    public static final DeferredItem<Item> TEST_HELMET = ITEMS.registerItem(
-            "test_helmet",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.TEST_ARMOR_MATERIAL, ArmorType.HELMET))
+    public static final DeferredItem<Item> RUBY_HELMET = ITEMS.registerItem(
+            "ruby_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.HELMET))
     );
 
-    public static final DeferredItem<Item> TEST_LEGGINGS = ITEMS.registerItem(
-            "test_leggings",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.TEST_ARMOR_MATERIAL, ArmorType.LEGGINGS))
+    public static final DeferredItem<Item> RUBY_LEGGINGS = ITEMS.registerItem(
+            "ruby_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.LEGGINGS))
     );
 
-    public static final DeferredItem<Item> TEST_CHESTPLATE = ITEMS.registerItem(
-            "test_chestplate",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.TEST_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
+    public static final DeferredItem<Item> RUBY_CHESTPLATE = ITEMS.registerItem(
+            "ruby_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
     );
 
     public static void register(IEventBus eventBus){

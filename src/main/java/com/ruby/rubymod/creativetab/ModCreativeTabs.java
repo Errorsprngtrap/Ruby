@@ -37,6 +37,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        output.accept(ModBlocks.RUBY_SLAB);
                     })
                     .build()
     );

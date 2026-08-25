@@ -33,8 +33,11 @@ public class ModModelProviders extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RUBY_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
 
         //blocks
-        blockModels.createTrivialCube(ModBlocks.RUBY_BLOCK.get());
+        blockModels.family(ModBlocks.RUBY_BLOCK.get())
+                        .slab(ModBlocks.RUBY_SLAB.get());
+
         blockModels.createTrivialCube(ModBlocks.RUBY_ORE.get());
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+
     }
 }

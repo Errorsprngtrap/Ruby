@@ -6,6 +6,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -36,6 +37,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops().strength(3.5F,2.5F))
     );
 
+    public static final DeferredBlock<Block> RUBY_SLAB = registerBlock(
+            "ruby_slab",
+            properties -> new SlabBlock(properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
 
     //Register Block Item
     private static  <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties,T> function) {

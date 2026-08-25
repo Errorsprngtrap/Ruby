@@ -29,12 +29,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.RUBY_BLOCK.get());
-        //dropSelf(ModBlocks.RUBY_ORE.get());
-        //dropSelf(ModBlocks.DEEPSLATE_RUBY_ORE.get());
         add(ModBlocks.RUBY_ORE.get(),createMultipleOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(),1.0F,3.0F));
         add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),createMultipleOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(),1.0F,5.0F));
-        //createMultipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get(),2.0F,5.0F);
-    }
+        add(ModBlocks.RUBY_SLAB.get(),this::createSlabItemTable);
+        }
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item , Float min , Float max) {
         HolderLookup.RegistryLookup<Enchantment> enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);

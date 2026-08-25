@@ -7,6 +7,7 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 
 public class ModModelProviders extends ModelProvider {
@@ -34,9 +35,15 @@ public class ModModelProviders extends ModelProvider {
 
         //blocks
         blockModels.family(ModBlocks.RUBY_BLOCK.get())
-                        .slab(ModBlocks.RUBY_SLAB.get());
+                .slab(ModBlocks.RUBY_SLAB.get())
+                .stairs(ModBlocks.RUBY_STAIR.get())
+        ;
 
-        blockModels.createTrivialCube(ModBlocks.RUBY_ORE.get());
+        blockModels.createAxisAlignedPillarBlockCustomModel(ModBlocks.RUBY_CHAIN.get(),
+                BlockModelGenerators.plainVariant(TexturedModel.CHAIN.create(ModBlocks.RUBY_CHAIN.get(), blockModels.modelOutput)));
+
+        blockModels.createLantern(ModBlocks.RUBY_LANTERN.get());
+         blockModels.createTrivialCube(ModBlocks.RUBY_ORE.get());
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_RUBY_ORE.get());
 
     }

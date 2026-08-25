@@ -4,11 +4,10 @@ import com.ruby.rubymod.RubyMod;
 import com.ruby.rubymod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -40,6 +39,27 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RUBY_SLAB = registerBlock(
             "ruby_slab",
             properties -> new SlabBlock(properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
+
+    public static final DeferredBlock<Block> RUBY_STAIR = registerBlock(
+            "ruby_stair",
+            properties -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
+
+    public static final DeferredBlock<Block> RUBY_CHAIN = registerBlock(
+            "ruby_chain",
+            properties -> new ChainBlock(properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
+
+    public static final DeferredBlock<Block> RUBY_LANTERN = registerBlock(
+            "ruby_lantern",
+            properties -> new LanternBlock(properties.requiresCorrectToolForDrops()
                     .strength(4.5F,5.5F).sound(SoundType.METAL)
             )
     );

@@ -88,7 +88,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("ruby_block", has(ModBlocks.RUBY_BLOCK.get()))
                 .save(output);
 
-        shapeless(RecipeCategory.MISC,ModItems.RUBY.get())
+        shapeless(RecipeCategory.MISC,ModItems.RUBY.get(),4)
                 .requires(ModBlocks.RUBY_BLOCK.get())
                 .group("ruby")
                 .unlockedBy("ruby_block", has(ModBlocks.RUBY_BLOCK.get()))
@@ -99,14 +99,21 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(ModItems.RUBY_NUGGET.get(),9)
                 .group("ruby")
                 .unlockedBy("ruby_nuggets", has(ModItems.RUBY_NUGGET.get()))
-                .save(output,"block_ruby_to_ruby")
+                .save(output,"ruby_to_nuggets")
         ;
 
-        shapeless(RecipeCategory.MISC,ModItems.RUBY.get(),9)
-                .requires(ModItems.RUBY_NUGGET.get())
+        shapeless(RecipeCategory.MISC,ModItems.RUBY_NUGGET.get(),9)
+                .requires(ModItems.RUBY.get())
                 .group("ruby")
                 .unlockedBy("ruby", has(ModItems.RUBY.get()))
                 .save(output,"nugget_ruby_to_ruby")
+        ;
+
+        shapeless(RecipeCategory.MISC,ModItems.RUBY_NUGGET.get(),9)
+                .requires(ModItems.RUBY.get(),1)
+                .group("ruby")
+                .unlockedBy("ruby", has(ModItems.RUBY.get()))
+                .save(output,"rubby_to_nugget")
         ;
 
         shaped(RecipeCategory.COMBAT, ModItems.RUBY_SWORD.get())

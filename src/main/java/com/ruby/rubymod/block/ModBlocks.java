@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -60,6 +61,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RUBY_LANTERN = registerBlock(
             "ruby_lantern",
             properties -> new LanternBlock(properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
+
+    public static final DeferredBlock<Block> RUBY_BUTTON = registerBlock(
+            "ruby_button",
+            properties -> new ButtonBlock(BlockSetType.IRON,60,properties.requiresCorrectToolForDrops()
+                    .strength(4.5F,5.5F).sound(SoundType.METAL)
+            )
+    );
+
+    public static final DeferredBlock<Block> RUBY_PRESSURE_PLATE = registerBlock(
+            "ruby_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.IRON,properties.requiresCorrectToolForDrops()
                     .strength(4.5F,5.5F).sound(SoundType.METAL)
             )
     );

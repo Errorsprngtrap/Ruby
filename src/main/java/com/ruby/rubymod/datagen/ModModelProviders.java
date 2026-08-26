@@ -37,6 +37,8 @@ public class ModModelProviders extends ModelProvider {
         blockModels.family(ModBlocks.RUBY_BLOCK.get())
                 .slab(ModBlocks.RUBY_SLAB.get())
                 .stairs(ModBlocks.RUBY_STAIR.get())
+                .button(ModBlocks.RUBY_BUTTON.get())
+                .pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE.get())
         ;
 
         blockModels.createAxisAlignedPillarBlockCustomModel(ModBlocks.RUBY_CHAIN.get(),

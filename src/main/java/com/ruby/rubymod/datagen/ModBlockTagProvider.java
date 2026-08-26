@@ -29,6 +29,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RUBY_STAIR.get())
                 .add(ModBlocks.RUBY_CHAIN.get())
                 .add(ModBlocks.RUBY_LANTERN.get())
+                .add(ModBlocks.RUBY_BUTTON.get())
+                .add(ModBlocks.RUBY_PRESSURE_PLATE.get())
         ;
 
         tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
@@ -39,6 +41,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RUBY_BLOCK.get())
                 .add(ModBlocks.RUBY_CHAIN.get())
                 .add(ModBlocks.RUBY_LANTERN.get())
+                .add(ModBlocks.RUBY_BUTTON.get())
+                .add(ModBlocks.RUBY_PRESSURE_PLATE.get())
         ;
 
         tag(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL)
@@ -67,12 +71,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RUBY_CHAIN.get())
         ;
 
+        tag(BlockTags.BUTTONS)
+                .add(ModBlocks.RUBY_BUTTON.get())
+        ;
+
+        tag(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.RUBY_PRESSURE_PLATE.get())
+        ;
+
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK.get())
                 .add(ModBlocks.RUBY_SLAB.get())
                 .add(ModBlocks.RUBY_STAIR.get())
                 .add(ModBlocks.RUBY_CHAIN.get())
                 .add(ModBlocks.RUBY_LANTERN.get())
+                .add(ModBlocks.RUBY_BUTTON.get())
+                .add(ModBlocks.RUBY_PRESSURE_PLATE.get())
         ;
 
     }

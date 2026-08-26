@@ -41,6 +41,8 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.RUBY_STAIR);
                         output.accept(ModBlocks.RUBY_CHAIN);
                         output.accept(ModBlocks.RUBY_LANTERN);
+                        output.accept(ModBlocks.RUBY_BUTTON);
+                        output.accept(ModBlocks.RUBY_PRESSURE_PLATE);
                     })
                     .build()
     );

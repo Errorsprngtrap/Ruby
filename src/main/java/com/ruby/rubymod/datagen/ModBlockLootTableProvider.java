@@ -35,6 +35,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.RUBY_SLAB.get(),this::createSlabItemTable);
         dropSelf(ModBlocks.RUBY_CHAIN.get());
         dropSelf(ModBlocks.RUBY_LANTERN.get());
+        dropSelf(ModBlocks.RUBY_BUTTON.get());
+        dropSelf(ModBlocks.RUBY_PRESSURE_PLATE.get());
         };
 
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item , Float min , Float max) {

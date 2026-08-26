@@ -33,6 +33,7 @@ public class ModModelProviders extends ModelProvider {
         itemModels.generateFlatItem(ModItems.RUBY_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.RUBY_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ModItems.RUBY_NUGGET.get(), ModelTemplates.FLAT_ITEM);
         //blocks
         blockModels.family(ModBlocks.RUBY_BLOCK.get())
                 .slab(ModBlocks.RUBY_SLAB.get())

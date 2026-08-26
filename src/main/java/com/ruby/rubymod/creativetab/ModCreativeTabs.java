@@ -22,6 +22,8 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetabs.rubymod.ruby_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY);
+                        output.accept(ModItems.RUBY_NUGGET);
+
                         output.accept(ModItems.RUBY_SWORD);
                         output.accept(ModItems.RUBY_PICKAXE);
                         output.accept(ModItems.RUBY_AXE);

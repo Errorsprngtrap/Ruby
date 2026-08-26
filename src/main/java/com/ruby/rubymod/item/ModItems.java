@@ -19,6 +19,11 @@ public class ModItems {
             properties ->  properties
     );
 
+    public static final DeferredItem<Item> RUBY_NUGGET = ITEMS.registerSimpleItem(
+            "ruby_nugget",
+            properties ->  properties
+    );
+
     public static final DeferredItem<Item> RUBY_SWORD = ITEMS.registerSimpleItem(
             "ruby_sword",
             properties ->  properties.sword(ModToolMaterial.RUBY_MATERIAL,3.0F,-2.2F)

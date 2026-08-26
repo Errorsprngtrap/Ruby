@@ -109,13 +109,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .save(output,"nugget_ruby_to_ruby")
         ;
 
-        shapeless(RecipeCategory.MISC,ModItems.RUBY_NUGGET.get(),9)
-                .requires(ModItems.RUBY.get(),1)
-                .group("ruby")
-                .unlockedBy("ruby", has(ModItems.RUBY.get()))
-                .save(output,"rubby_to_nugget")
-        ;
-
         shaped(RecipeCategory.COMBAT, ModItems.RUBY_SWORD.get())
                 .pattern("R")
                 .pattern("R")

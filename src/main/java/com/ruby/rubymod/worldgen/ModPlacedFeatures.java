@@ -23,7 +23,7 @@ public class ModPlacedFeatures {
 
         register(bootstrapContext,RUBY_ORE_COMMON_PLACED_KEY,
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_COMMON_OVERWORLD_KEY),
-                ModOrePlacements.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(-30),VerticalAnchor.absolute(30))));
+                ModOrePlacements.commonOrePlacement(5, HeightRangePlacement.triangle(VerticalAnchor.absolute(-35),VerticalAnchor.absolute(35))));
     }
 
     public static ResourceKey<PlacedFeature> registerKey(String name){

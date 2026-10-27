@@ -1,15 +1,13 @@
 package com.ruby.rubymod.item;
 
 import com.ruby.rubymod.RubyMod;
-import com.ruby.rubymod.armormaterial.ModArmorMaterial;
+import com.ruby.rubymod.armormaterial.ModArmorMaterials;
 import com.ruby.rubymod.toolmaterial.ModToolMaterial;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.function.Function;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(RubyMod.MOD_ID);
@@ -55,22 +53,27 @@ public class ModItems {
 
     public static final DeferredItem<Item> RUBY_BOOTS = ITEMS.registerItem(
             "ruby_boots",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.BOOTS))
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorType.BOOTS))
     );
 
     public static final DeferredItem<Item> RUBY_HELMET = ITEMS.registerItem(
             "ruby_helmet",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.HELMET))
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorType.HELMET))
     );
 
     public static final DeferredItem<Item> RUBY_LEGGINGS = ITEMS.registerItem(
             "ruby_leggings",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.LEGGINGS))
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorType.LEGGINGS))
     );
 
     public static final DeferredItem<Item> RUBY_CHESTPLATE = ITEMS.registerItem(
             "ruby_chestplate",
-            properties -> new Item(properties.humanoidArmor(ModArmorMaterial.RUBY_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorType.CHESTPLATE))
+    );
+
+    public static final DeferredItem<Item> RUBY_HORSE_ARMOR = ITEMS.registerItem(
+            "ruby_horse_armor",
+            properties -> new Item(properties.horseArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL))
     );
 
     public static void register(IEventBus eventBus){

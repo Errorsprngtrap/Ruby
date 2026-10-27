@@ -36,6 +36,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RUBY_CHESTPLATE);
                         output.accept(ModItems.RUBY_LEGGINGS);
 
+                        output.accept(ModItems.RUBY_HORSE_ARMOR);
+
                         output.accept(ModBlocks.RUBY_BLOCK);
                         output.accept(ModBlocks.RUBY_ORE);
                         output.accept(ModBlocks.DEEPSLATE_RUBY_ORE);

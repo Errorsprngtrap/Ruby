@@ -1,6 +1,7 @@
 package com.ruby.rubymod.datagen;
 
 import com.ruby.rubymod.RubyMod;
+import com.ruby.rubymod.armormaterial.ModArmorMaterials;
 import com.ruby.rubymod.block.ModBlocks;
 import com.ruby.rubymod.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -28,12 +29,15 @@ public class ModModelProviders extends ModelProvider {
 
         itemModels.generateSpear(ModItems.RUBY_SPEAR.get());
 
-        itemModels.generateFlatItem(ModItems.RUBY_BOOTS.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.RUBY_HELMET.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.RUBY_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.RUBY_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateTrimmableItem(ModItems.RUBY_BOOTS.get(), ModArmorMaterials.RUBY_KEY,ItemModelGenerators.TRIM_PREFIX_BOOTS,false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_LEGGINGS.get(), ModArmorMaterials.RUBY_KEY,ItemModelGenerators.TRIM_PREFIX_LEGGINGS,false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_CHESTPLATE.get(), ModArmorMaterials.RUBY_KEY,ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,false);
+        itemModels.generateTrimmableItem(ModItems.RUBY_HELMET.get(), ModArmorMaterials.RUBY_KEY,ItemModelGenerators.TRIM_PREFIX_HELMET,false);
+
+        itemModels.generateFlatItem(ModItems.RUBY_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.RUBY_NUGGET.get(), ModelTemplates.FLAT_ITEM);
+
         //blocks
         blockModels.family(ModBlocks.RUBY_BLOCK.get())
                 .slab(ModBlocks.RUBY_SLAB.get())

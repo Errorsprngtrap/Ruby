@@ -1,7 +1,7 @@
 package com.ruby.rubymod.datagen;
 
 import com.ruby.rubymod.RubyMod;
-import com.ruby.rubymod.armormaterial.ModArmorMaterial;
+import com.ruby.rubymod.armormaterial.ModArmorMaterials;
 import net.minecraft.client.resources.model.EquipmentClientInfo;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
@@ -23,8 +23,10 @@ public class ModEquipmentAsset implements DataProvider {
     }
 
     private static void bootstrap(BiConsumer<ResourceKey<EquipmentAsset>, EquipmentClientInfo> output) {
-        output.accept(ModArmorMaterial.RUBY_KEY, EquipmentClientInfo.builder()
+        output.accept(ModArmorMaterials.RUBY_KEY, EquipmentClientInfo.builder()
                 .addHumanoidLayers(Identifier.fromNamespaceAndPath(RubyMod.MOD_ID, "ruby"), false)
+                        .addLayers(EquipmentClientInfo.LayerType.HORSE_BODY,
+                                new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(RubyMod.MOD_ID,"ruby")))
                 .build());
     }
 
